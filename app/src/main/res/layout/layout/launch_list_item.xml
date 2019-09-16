@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_launch_patch"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_mission_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_launch_patch"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mission Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_rocket_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_launch_patch"
+        app:layout_constraintTop_toBottomOf="@id/tv_mission_name"
+        tools:text="Rocket Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_launch_site_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_launch_patch"
+        app:layout_constraintTop_toBottomOf="@id/tv_rocket_name"
+        tools:text="Launch Site Name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_date_of_launch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_launch_patch"
+        app:layout_constraintTop_toBottomOf="@id/tv_launch_site_name"
+        tools:text="Date of Launch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
